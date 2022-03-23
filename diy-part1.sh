@@ -17,9 +17,6 @@
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-# add theme
-cd package/lean  
-rm -rf luci-theme-argon  
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  
-
-git clone -b 18.06 https://github.com/r1172464137/luci-theme-edge.git
+cd package
+git clone https://github.com/mchome/openwrt-dogcom.git
+git clone https://github.com/mchome/luci-app-dogcom.git
